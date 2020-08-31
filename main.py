@@ -1,3 +1,7 @@
+# Title: N/A
+# Author: Christian A Loizou
+# Date created: 31/08/2020
+
 from cocos import layer, scene
 from cocos.director import director
 from cocos.text import Label
