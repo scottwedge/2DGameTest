@@ -12,6 +12,7 @@ TITLE_TEXT = 'Main Menu'
 TITLE_FONT_NAME = 'Times New Roman'
 TITLE_FONT_SIZE = 32
 
+# CLASSES
 
 class Application(layer.Layer):
     def __init__(self):
@@ -21,6 +22,10 @@ class Application(layer.Layer):
             anchor_x='center', anchor_y='center')
         self.title_label.position = tuple(map(lambda p: p/2, self.size))
         self.add(self.title_label)
+
+# METHODS
+
+# OUT OF FRAME
 
 if __name__ == '__main__':
     director.init(width=1280, height=720, caption=WINDOW_CAPTION)
