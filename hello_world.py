@@ -1,10 +1,10 @@
 import cocos
 
 class Application(cocos.layer.Layer):
-    def __init__(self):
+    def __init__(self, /, title = 'Cocos Application'):
         super(Application, self).__init__()
-
-        label = cocos.text.Label('Hello, World!', font_size = 32, anchor_x='center', anchor_y='top')
+        self.title = title
+        label = cocos.text.Label(self.title, font_size = 32, anchor_x='center', anchor_y='top')
         label.position = (320, 240)
         self.add(label)
 
